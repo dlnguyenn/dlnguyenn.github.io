@@ -4,10 +4,37 @@
 
 /* Links */
 a,
-a:focus,
+a:focus
+{
+  position: relative;
+  color: #fff;
+  text-decoration: none;
+}
+a:before {
+  content: "";
+  position: absolute;
+  width: 78%;
+  height: 2px;
+  bottom: .5rem;
+  left: 3rem;
+  background-color: #fff;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
 a:hover {
   color: #fff;
+  text-decoration: none;
+
 }
+a:hover:before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+
 
 /* Custom default button */
 .btn-secondary,
@@ -34,6 +61,7 @@ body {
   text-align: center;
   text-shadow: 0 .05rem .1rem rgba(0,0,0,.5);
   background-image: url('https://i.kinja-img.com/gawker-media/image/upload/t_original/951820009082492817.jpg');
+
 }
 
 
@@ -109,7 +137,8 @@ body {
  */
 
 .cover {
-  padding: 0 1.5rem;
+  padding-top: 20rem;
+  
 }
 .cover .btn-lg {
   padding: .75rem 1.25rem;
