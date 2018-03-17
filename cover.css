@@ -37,7 +37,11 @@ body {
   text-align: center;
   text-shadow: 0 .05rem .1rem rgba(0,0,0,.5);
   background-image: url('https://i.kinja-img.com/gawker-media/image/upload/t_original/951820009082492817.jpg');
-  background-size: cover;
+  min-height:100%;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    -moz-background-size: cover;
 }
 
 
