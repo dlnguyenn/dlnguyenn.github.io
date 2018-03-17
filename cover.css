@@ -4,35 +4,11 @@
 
 /* Links */
 a,
-a:focus
-{
-  position: relative;
-  color: #fff;
-  text-decoration: none;
-}
-a:before {
-  content: "";
-  position: absolute;
-  width: 78%;
-  height: 2px;
-  bottom: .5rem;
-  left: 3rem;
-  background-color: #fff;
-  visibility: hidden;
-  -webkit-transform: scaleX(0);
-  transform: scaleX(0);
-  -webkit-transition: all 0.3s ease-in-out 0s;
-  transition: all 0.3s ease-in-out 0s;
-}
+a:focus,
 a:hover {
   color: #fff;
-  text-decoration: none;
+  border-bottom-color: #111; 
 
-}
-a:hover:before {
-  visibility: visible;
-  -webkit-transform: scaleX(1);
-  transform: scaleX(1);
 }
 
 
@@ -96,9 +72,44 @@ body {
   margin-bottom: 2rem;
 }
 
-.masthead-brand {
+.masthead-brand{
   margin-bottom: 0;
 }
+
+.masthead-brand:focus {
+  margin-bottom: 0 ;
+  position: relative;
+  color: #fff;
+  text-decoration: none;
+}
+
+.masthead-brand:before {
+  content: "";
+  position: absolute;
+  width: 25.68%;
+  height: 2px;
+  bottom: .66rem;
+  left: 5rem;
+  background-color: #fff;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+.masthead-brand:hover {
+  color: #fff;
+  text-decoration: none;
+
+}
+.masthead-brand:hover:before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+
+
+
 
 .nav-masthead .nav-link {
   padding: .25rem 0;
@@ -137,8 +148,9 @@ body {
  */
 
 .cover {
-  padding-top: 20rem;
-  
+  /*padding-top: 20rem;*/
+  position: relative;
+  bottom: -10rem;
 }
 .cover .btn-lg {
   padding: .75rem 1.25rem;
