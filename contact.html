@@ -1,9 +1,8 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <style>
-      @import url('https://fonts.googleapis.com/css?family=Roboto:300,400');
-    </style>
+    <link href="https://fonts.googleapis.com/css?family=Crimson+Text|Playfair+Display" rel="stylesheet"> 
+    <link rel="stylesheet" href="style/slider-def.css"> 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
@@ -39,14 +38,28 @@
               <nav class="nav nav-masthead">
                 <a class="nav-link" href="index.html">home</a>
                 <a class="nav-link active" href="contact.html" >contact</a>
-                <a class="nav-link" href="about.html">about</a>
+                <a class="nav-link" href="about.html">projects</a>
               </nav>
             </div>
           </header>
 
-        <img src="itme.jpg" alt="Italian Trulli">
+        <img src="me.jpg" alt="hey its danny">
         <br> 
         <p>let's get in touch</p>
+        <br>
+        <div class="container">
+          <form action="action_page.php">
+
+            <label for="fname">First Name</label>
+            <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+            <label for="subject">Subject</label>
+            <textarea id="subject" name="subject" placeholder="Write something.." style="height:50px"></textarea>
+
+            <input type="submit" value="Submit">
+
+          </form>
+        </div> 
 
           <footer class="mastfoot">
             <div class="inner">
