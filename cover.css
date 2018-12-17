@@ -44,6 +44,21 @@ body {
     -moz-background-size: cover;
 }
 
+.cover-container > img {
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -200px;
+  width: 250px;
+  height: auto;
+  border: solid black 4px;
+
+}
+/*font*/
+
+.cover-container > p {
+  font-family: "Roboto";
+}
 
 /* Extra markup and styles for table-esque vertical and horizontal centering */
 .site-wrapper {
@@ -199,8 +214,20 @@ body {
   }
 }
 
-@media all and (max-width: 650px) and (max-height: 850px) {
+/*mobile settings*/
+@media all and (max-width: 770px) and (max-height: 850px) {
   .mastfoot {
+    display:none;
+  }
+  .cover-container > img {
+    margin-top: -10%;
+  }
+  .nav-masthead .nav-link {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .masthead-brand:before {
     display:none;
   }
 }
